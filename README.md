@@ -9,3 +9,6 @@ Run the following command.
 `python3 -m build`
 
 Then `dist` directory will be created under the root.
+
+# REFERENCE
+- [Packaging Python Projects](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
