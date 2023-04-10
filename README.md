@@ -3,10 +3,15 @@ This is an exmple project for packaging my own python project.
 
 # PRELIMINARIES
 - Install `build`: `pip install build`.
+- Install `pytest`: `pip install pytest`.
+
+# RUN TESTS
+Run the following command.
+`python -m pytest`.
 
 # HOW TO BUILD
 Run the following command.
-`python3 -m build`
+`python -m build`
 
 Then `dist` directory will be created under the root.
 
