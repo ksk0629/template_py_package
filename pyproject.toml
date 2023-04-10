@@ -29,6 +29,9 @@ dev = [
   "sphinx >= 6"
 ]
 
+[project.scripts]
+run_example = "example_package.example:main"
+
 [tool.pytest.ini_options]
 markers = [
     "add_number: marks tests for add_number function",
