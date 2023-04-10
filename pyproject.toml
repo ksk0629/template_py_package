@@ -28,3 +28,8 @@ dev = [
   "pytest-cov",
   "sphinx >= 6"
 ]
+
+[tool.pytest.ini_options]
+markers = [
+    "add_number: marks tests for add_number function",
+]
