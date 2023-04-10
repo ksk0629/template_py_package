@@ -21,3 +21,8 @@ classifiers = [
 [project.urls]
 "Homepage" = "https://github.com/ksk0629/template_py_package"
 "Bug Tracker" = "https://github.com/ksk0629/template_py_package/issues"
+
+[project.optional-dependencies]
+test = [
+  "pytest >=7.0",
+]
