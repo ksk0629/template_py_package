@@ -10,5 +10,11 @@ Run the following command.
 
 Then `dist` directory will be created under the root.
 
+# HOW TO INSTALL
+Run the following command.
+`pip install dist/example_package-0.0.1-py3-none-any.whl`
+
+The version or something depends on the settings written in the `pyproject.toml`.
+
 # REFERENCE
 - [Packaging Python Projects](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
