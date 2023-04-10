@@ -5,6 +5,7 @@ authors = [
   { name="ksk0629", email="ksk0629_example@gmail.com" },
 ]
 description = "A small example package"
+license = { file = "LICENSE" }
 readme = "README.md"
 requires-python = ">=3.11"
 classifiers = [
