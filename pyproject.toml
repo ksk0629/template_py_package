@@ -23,6 +23,8 @@ classifiers = [
 "Bug Tracker" = "https://github.com/ksk0629/template_py_package/issues"
 
 [project.optional-dependencies]
-test = [
+dev = [
   "pytest >=7.0",
+  "pytest-cov",
+  "sphinx >= 6"
 ]
