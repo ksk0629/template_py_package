@@ -9,17 +9,17 @@ def example_fixture():
 
 
 @pytest.mark.add_number
-def test_with_positive_number(example_fixture):
-    positive_number = 1
-    result = add_one(positive_number)
-    assert result == positive_number + 1
+@pytest.mark.parametrize("number, output",[(1, 2), (2, 3), (3, 4), (5, 6)])
+def test_with_positive_numbers(example_fixture, number, output):
+    result = add_one(number)
+    assert result == output
 
 
 @pytest.mark.add_number
-def test_with_negative_number(example_fixture):
-    negative_number = -1
-    result = add_one(negative_number)
-    assert result == negative_number + 1
+@pytest.mark.parametrize("number, output",[(-4, -3), (-3, -2), (-2, -1), (-1, 0)])
+def test_with_negative_number(example_fixture, number, output):
+    result = add_one(number)
+    assert result == output
     
 
 @pytest.mark.add_number
