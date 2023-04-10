@@ -32,5 +32,16 @@ Run the following command.
 
 `python -m pytest`.
 
+The following command would be preferred if you need the coverage-report.
+
+`python -m pytest --cov=. --cov-report term-missing`
+
+for seeing the report on your console, or
+
+`python -m pytest --cov=. --cov-report=html`
+
+for outputting html files.
+
+
 # REFERENCE
 - [Packaging Python Projects](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
