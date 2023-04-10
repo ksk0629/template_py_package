@@ -3,6 +3,12 @@ from src.example_package.example import add_one
 
 
 class TestAddNumber():
+    def setup_method(self, method):
+        print(f"TEST START: method {method.__name__}")
+
+    def teardown_method(self, method):
+        print(f"TEST END: method {method.__name__}")
+    
     @pytest.mark.add_number
     @pytest.mark.parametrize("positive_number, output",[(1, 2), (2, 3), (3, 4), (5, 6)])
     def test_with_positive_numbers(self, positive_number, output):
