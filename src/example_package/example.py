@@ -18,3 +18,7 @@ def add_one_with_example_class(number: int) -> int:
     example_class = ExampleClass(number)
     example_class.number = add_one(example_class.number)
     return example_class.number
+
+
+def main():
+    print(add_one(2))
