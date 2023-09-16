@@ -1,39 +1,16 @@
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
-
-[project]
-name = "example_package"
-version = "0.0.1"
-authors = [
-  { name="ksk0629", email="ksk0629_example@gmail.com" },
-]
-description = "A small example package"
-license = { file = "LICENSE" }
+[tool.poetry]
+name = "template-py-package"
+version = "0.1.0"
+description = ""
+authors = ["ksk0629 <neko.to.tomodachi.muse@gmail.com>"]
+license = "MIT"
 readme = "README.md"
-requires-python = ">=3.11"
-classifiers = [
-    "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent",
-]
+packages = [{include = "template_py_package"}]
 
-[project.urls]
-"Homepage" = "https://github.com/ksk0629/template_py_package"
-"Bug Tracker" = "https://github.com/ksk0629/template_py_package/issues"
+[tool.poetry.dependencies]
+python = "^3.11"
 
-[project.optional-dependencies]
-dev = [
-  "pytest >=7.0",
-  "pytest-cov",
-  "sphinx >= 6"
-]
 
-[project.scripts]
-run_example = "example_package.example:main"
-
-[tool.pytest.ini_options]
-markers = [
-    "add_number: marks tests for add_number function",
-    "example_class: marks tests for ExmapleClass Class"
-]
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
