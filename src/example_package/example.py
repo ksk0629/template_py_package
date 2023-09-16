@@ -1,5 +1,6 @@
 from src.example_package.example_class import ExampleClass
 
+
 def add_one(number: int) -> int:
     """Add one to a given number.
 
