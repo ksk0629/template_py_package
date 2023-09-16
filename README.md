@@ -9,36 +9,36 @@ This is an exmple project for packaging my own python project.
 ## FOR USERS
 Run the following command to install the package.
 
-`pip install -e .`
+`poetry install --only-root`
 
 ## FOR DISTRUBUTERS
 Run the following command to build the package.
 
-`python -m build`
+`poetry build`
 
 Then `dist` directory will be created under the root in which the package is installed by the following command.
 
-`pip install dist/example_package-0.0.1-py3-none-any.whl`
+`poetry add dist/template_py_package-0.1.0-py3-none-any.whl`
 
 The filename depends on the settings written in the `pyproject.toml`.
 
 ## FOR DEVELOPERS
 Run the following command to install the package and the dependencies.
 
-`pip install -e ".[dev]"`
+`poetry install`
 
 # HOW TO RUN TESTS
 Run the following command.
 
-`python -m pytest`.
+`poetry run pytest`.
 
 The following command would be preferred if you need the coverage-report.
 
-`python -m pytest --cov=. --cov-report term-missing`
+`poetry run pytest --cov=. --cov-report term-missing`
 
 for seeing the report on your console, or
 
-`python -m pytest --cov=. --cov-report=html`
+`poetry run pytest --cov=. --cov-report=html`
 
 for outputting html files.
 
