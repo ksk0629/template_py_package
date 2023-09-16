@@ -45,3 +45,4 @@ for outputting html files.
 
 # REFERENCE
 - [Packaging Python Projects](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
+- [pytest：フィクスチャ(fixture)の使い方](https://qiita.com/_akiyama_/items/9ead227227d669b0564e) (Japanese)
