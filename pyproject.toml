@@ -1,16 +1,31 @@
 [tool.poetry]
 name = "template-py-package"
 version = "0.1.0"
-description = ""
+description = "A small example package"
 authors = ["ksk0629 <neko.to.tomodachi.muse@gmail.com>"]
 license = "MIT"
 readme = "README.md"
 packages = [{include = "template_py_package"}]
+repository = "https://github.com/ksk0629/template_py_package"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
 
 [tool.poetry.dependencies]
 python = "^3.11"
+
+[tool.poetry.scripts]
+run_example = "example_package.example:main"
 
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+
+[tool.pytest.ini_options]
+markers = [
+    "add_number: marks tests for add_number function",
+    "example_class: marks tests for ExmapleClass Class"
+]
