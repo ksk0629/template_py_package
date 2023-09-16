@@ -2,6 +2,7 @@ import pytest
 
 from src.example_package.example_class import ExampleClass
 
+
 @pytest.fixture(scope="function")
 def fixture_function():
     print("fixture_function: function")
