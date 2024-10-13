@@ -4,6 +4,12 @@ from src.example_package.example_class import ExampleClass
 
 
 class TestExampleClassClass:
+    @classmethod
+    def setup_class(cls):
+        cls.whole_number = 2
+        cls.example_class = ExampleClass(cls.whole_number)
+        assert cls.example_class.number == cls.whole_number
+
     @pytest.mark.example_class
     @pytest.mark.parametrize("whole_number", [1, -1, 2, -2, 0])
     def test_integer(
