@@ -48,3 +48,4 @@ for outputting html files.
 - [pytest：フィクスチャ(fixture)の使い方](https://qiita.com/_akiyama_/items/9ead227227d669b0564e) (Japanese)
 - [GitHub Actions integration](https://black.readthedocs.io/en/stable/integrations/github_actions.html)
 - [How to use fixtures](https://docs.pytest.org/en/7.1.x/how-to/fixtures.html)
+- [docstrings](https://qiita.com/futakuchi0117/items/4d3997c1ca1323259844)
