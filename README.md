@@ -36,6 +36,12 @@ This makes `whl` and `tar.gz` without dev-dependencies at a `dist` directory, wh
 </details>
 
 # TEST
+## STATIC
+Run the following commands.
+
+- `poetry run mypy ./(py script)`
+
+## DYNAMIC
 Run either the following three commands.
 
 - `poetry run pytest`
@@ -83,4 +89,5 @@ Follow the below procedure to generate the document.
 - [pytest：フィクスチャ(fixture)の使い方](https://qiita.com/_akiyama_/items/9ead227227d669b0564e) (Japanese)
 - [GitHub Actions integration](https://black.readthedocs.io/en/stable/integrations/github_actions.html)
 - [How to use fixtures](https://docs.pytest.org/en/7.1.x/how-to/fixtures.html)
-- [docstrings](https://qiita.com/futakuchi0117/items/4d3997c1ca1323259844)
+- [docstrings article](https://qiita.com/futakuchi0117/items/4d3997c1ca1323259844)
+- [mypy article](https://qiita.com/Tadataka_Takahashi/items/300d99bb42ec1df719f3)
