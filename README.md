@@ -35,21 +35,14 @@ This makes `whl` and `tar.gz` without dev-dependencies at a `dist` directory, wh
 
 </details>
 
-# HOW TO RUN TESTS
-Run the following command.
+# TEST
+Run either the following three commands.
 
-`poetry run pytest`.
+- `poetry run pytest`
+- `poetry run pytest --cov=. --cov-report term-missing`
+- `poetry run pytest --cov=. --cov-report=html`
 
-The following command would be preferred if you need the coverage-report.
-
-`poetry run pytest --cov=. --cov-report term-missing`
-
-for seeing the report on your console, or
-
-`poetry run pytest --cov=. --cov-report=html`
-
-for outputting html files.
-
+The first one will do test, the second one will show the coverage-report in your terminal and the last one will generate it as html.
 
 # REFERENCE
 - [Packaging Python Projects](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
