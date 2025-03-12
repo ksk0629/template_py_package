@@ -1,3 +1,6 @@
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+
 # INTRODUCTION
 This is an exmple project for packaging my own python project. This assumes you to use `poetry`.
 
