@@ -38,3 +38,5 @@ markers = [
     "add_number: marks tests for add_number function",
     "example_class: marks tests for ExmapleClass Class"
 ]
+pythonpath = "./src"
+testpaths = ["tests",]
