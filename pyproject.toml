@@ -26,6 +26,8 @@ sphinx = "^8.2.3"
 black = "^25.1.0"
 jupyter = "^1.1.1"
 notebook = "^7.3.2"
+sphinx-rtd-theme = "^3.0.2"
+mypy = "^1.15.0"
 
 
 [build-system]
