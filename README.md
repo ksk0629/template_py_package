@@ -44,6 +44,40 @@ Run either the following three commands.
 
 The first one will do test, the second one will show the coverage-report in your terminal and the last one will generate it as html.
 
+# DOCUMENTATION
+Follow the below procedure to generate the document.
+
+1. Create `docs` directory: `poetry run sphinx-quickstart docs`
+2. Update `docs/conf.py`
+   - Uncomment the following codes in the script. Also, you should modify the last line according to your directory tree.
+    ```python
+    import os
+    import sys
+    sys.path.insert(0, os.path.abspath('../'))
+    ```
+   - Update the extensions.
+    ```python 
+        extensions = [
+        'sphinx.ext.autodoc'
+    ]
+    ```
+   - Add a theme.
+    ```python
+    html_theme = 'sphinx_rtd_theme'
+    ```
+3. Update `index/rst`.
+```rst
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   example_package (whatever you would like to add to the main page)
+```
+4. Generate `rst` files: `poetry run sphinx-apidoc -f -o ./docs/source ../`
+5. Gererate the document in `docs`: `make html`
+
+
+
 # REFERENCE
 - [Packaging Python Projects](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
 - [pytest：フィクスチャ(fixture)の使い方](https://qiita.com/_akiyama_/items/9ead227227d669b0564e) (Japanese)
