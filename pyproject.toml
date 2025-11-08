@@ -1,4 +1,4 @@
-[tool.poetry]
+[project]
 name = "template-py-package"
 version = "0.1.0"
 description = "A small example package"
@@ -11,28 +11,19 @@ classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
 ]
+requires-python = ">= 3.13"
 
-[tool.poetry.dependencies]
-python = "^3.13"
-
-[tool.poetry.scripts]
-run_example = "src.example_package.example:main"
-
-
-[tool.poetry.group.dev.dependencies]
-pytest = "^8.3.5"
-pytest-cov = "^6.0.0"
-sphinx = "^8.2.3"
-black = "^25.1.0"
-jupyter = "^1.1.1"
-notebook = "^7.3.2"
-sphinx-rtd-theme = "^3.0.2"
-mypy = "^1.15.0"
-
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+[dependency-groups]
+dev = [
+    "black>=25.9.0",
+    "jupyter>=1.1.1",
+    "mypy>=1.18.2",
+    "notebook>=7.4.7",
+    "pytest>=8.4.2",
+    "pytest-cov>=7.0.0",
+    "sphinx>=8.2.3",
+    "sphinx-rtd-theme>=3.0.2",
+]
 
 [tool.mypy]
 show_error_context = true

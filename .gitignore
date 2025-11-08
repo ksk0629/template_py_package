@@ -1,5 +1,5 @@
-# poetry
-poetry.lock
+# uv
+uv.lock
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
